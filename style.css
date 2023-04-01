@@ -11,7 +11,41 @@
     text-decoration: none;
     transition: all .2s linear;
 }
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
 
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4{
+    font-size: 20px;
+    color: #222;
+}
+
+h6{
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p{
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1{
+    padding: 40px 80px;
+}
+
+.section-m1{
+    margin: 40px 0;
+}
 html{
     font-size: 62.5%;
     overflow-x: hidden;
@@ -21,6 +55,7 @@ html{
 
 body{
     background-color: #fff;
+    width: 100%;
 }
 
 #header{
@@ -86,7 +121,7 @@ body{
     width: 100%;
     background-size: cover;
     background-position: top 25% right 0;
-    padding: 0 200px;
+    padding: 0 80px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -124,7 +159,7 @@ body{
 }
 /*feature*/
 #feature{
-    padding: 4px 450px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -136,14 +171,14 @@ body{
     margin-bottom: 10px;
 }
 
-.truck h6{
+#feature .truck h6{
     font-size: 1.3rem;
     padding: 9px 8px 6px 9px;
     line-height: 1;
     border-radius: 4px;
     color: #000000;
     display: inline-block;
-    background-color: aqua;
+    background-color: rgb(100, 202, 202);
 }
 
 #feature .truck{
@@ -151,7 +186,7 @@ body{
     text-align: center;
     padding: 25px 15px;
     box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
-    border: 1px solid #030303;
+    border: 1px solid #cce7d0;
     border-radius: 4px;
     background: lavender;
     margin: 15px 0;
@@ -161,11 +196,27 @@ body{
     box-shadow: 10px 10px 54px rgba(70,62,221,0.1);
 }
 
-/*product*/
-.abc{
-    padding: 40px 80px;
-    text-align: center;
+#feature .truck:nth-child(2) h6{
+    background-color: #cdebbc;
 }
+
+#feature .truck:nth-child(3) h6{
+    background-color: #be6262;
+}
+
+#feature .truck:nth-child(4) h6{
+    background-color: #32947b;
+}
+
+#feature .truck:nth-child(5) h6{
+    background-color: #e227aa;
+}
+
+#feature .truck:nth-child(6) h6{
+    background-color: #a7d820;
+}
+
+/*product*/
 
 #product1 h3{
     font-size: 4rem;
