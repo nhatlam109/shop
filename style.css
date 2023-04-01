@@ -1,46 +1,240 @@
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@300;400;500;600&display=swap');
+
 *{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'League Spartan', sans-serif;
-}
-h1{
-    font-size: 50px;
-    line-height: 64px;
-    color: #222;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
 }
 
-h2{
-    font-size: 46px;
-    line-height: 54px;
-    color: #222;
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
 }
 
-h4{
-    font-size: 20px;
-    color: #222;
-}
-
-h4{
-    font-weight: 700;
-    font-size: 12px;
-}
-p{
-    font-size: 16px;
-    color: #465b52;
-    margin: 15px 0 20px 0;
-}
-
-.section-p1{
-    padding: 40px 80px;
-}
-.section-m1{
-    margin: 40px 0;
-}
 body{
-    width: 100px;
+    background-color: #fff;
 }
 
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #e3e6f3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+    
+}
+/*header*/
+#header .logo{
+    font-size: 2rem;
+}
+
+#header .logo i{
+    color: blue;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,#navbar li a:active{
+    color: #088178;
+}
+
+#navbar li a.active::after,#navbar li a:hover::after{
+    content: "";
+    width: 50%;
+    height: 1px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+/*banner*/
+#banner{
+    background-image: url(img/img1.png);
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#banner p{
+    font-size: 1.5rem;
+}
+
+#banner h4{
+    padding-bottom: 15px;
+    font-size: 3rem;
+}
+
+#banner h2{
+    font-size: 2.5rem;
+}
+
+#banner h1{
+    color: #088178;
+    font-size: 3rem;
+}
+
+#banner button{
+    background-image: url(img/button.png);
+    background-color: transparent;
+    color: #088178;
+    border: 0;
+    padding: 14px 88px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+}
+/*feature*/
+#feature{
+    padding: 4px 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.truck i{
+    font-size: 6rem;
+    margin-bottom: 10px;
+}
+
+.truck h6{
+    font-size: 1.3rem;
+    padding: 9px 8px 6px 9px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #000000;
+    display: inline-block;
+    background-color: aqua;
+}
+
+#feature .truck{
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid #030303;
+    border-radius: 4px;
+    background: lavender;
+    margin: 15px 0;
+}
+
+#feature .truck:hover{
+    box-shadow: 10px 10px 54px rgba(70,62,221,0.1);
+}
+
+/*product*/
+.abc{
+    padding: 40px 80px;
+    text-align: center;
+}
+
+#product1 h3{
+    font-size: 4rem;
+}
+
+#product1 .pro_container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#product1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    background: lavender;
+    position: relative;
+}
+
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+    
+}
+
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product1 .pro .des span{
+    color: #606063;
+    font-size: 12px
+}
+
+#product1 .pro .des h5{
+    padding-top: 7px;
+    color: #000000;
+    font-size: 14px;
+}
+
+#product1 .pro .des h4{
+    padding-top: 7px;
+    color: #088178;
+    font-size: 15px;
+    font-weight: 700;   
+}
+
+#product1 .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
