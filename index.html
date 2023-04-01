@@ -6,114 +6,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HeadPhone</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
+    <section id="header">
       <a href="index.html" class="logo"><i class="fas fa-headphones-alt"></i> HeadPhone Store </a>
-      
-      <form action="" class="timkiem">
-        <input type="search" id="search" placeholder="Tìm kiếm sản phẩm">
-        <label for="search" class="fas fa-search"></label>
-      </form>
-      <nav class="navbar">
-        <a href="#"><b> Tai nghe </b></a>
-        <a href="#"><b> Loa Bluetooth </b></a>
-        <a href="#"><i class="fas fa-shopping-cart"></i></a>
-        <button onclick="document.getElementById('id01').style.display='block'" class="abc" style="width:auto;"><i class="fas fa-user"></i></button>
-      </nav>
-    </header><br><br><br><br><br><br>
-    <div class="slideshow-container">
 
-      <div class="mySlides fade">
-        <img src="img/img1.png" style="width:100%">
+      <div>
+        <ul id="navbar">
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="index.html">Sản phẩm</a></li>
+          <li><a href="index.html">Blog</a></li>
+          <li><a href="index.html">About</a></li>
+          <li><a href="index.html">Contact</a></li>
+          <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+        </ul>
       </div>
-      
-      <div class="mySlides fade">
-        <img src="img/img2.png" style="width:100%">
+    </section>
+
+    <section id="banner">
+      <h4><i class="fas fa-headphones-alt"></i> HeadPhone Store </h4>
+      <h2>Tận hưởng âm thanh tuyệt vời</h2>
+      <h1>Sở hữu ngay tai nghe chất lượng cao từ HeadPhone Store.</h1>
+      <p>Mua ngay để nhận được những ưu đãi cực khủng.</p>
+      <button><b>Mua ngay</b></button>
+    </section>
+
+    <section id="feature">
+      <div class="truck">
+        <i class="fas fa-truck"></i>
+        <h6><b>Giao hàng toàn quốc</b></h6>
       </div>
-
-      <a class="prev" onclick="plusSlides(-1)">❮</a>
-      <a class="next" onclick="plusSlides(1)">❯</a>
-      
-    </div>
-    <br>
-
-    <div id="id01" class="modal">
-  
-        <form class="modal-content animate" action="/action_page.php" method="post">
-          <div class="imgcontainer">
-            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-            <img src="img/img3.jfif" alt="Avatar" class="avatar">
+      <div class="truck">
+        <i class="fas fa-pig"></i>
+        <h6><b>Tiết kiệm tiền</b></h6>
+      </div>
+      <div class="truck">
+        <i class="fas fa-user-headset"></i><br>
+        <h6><b>Hỗ trợ 24/7</b></h6>
+      </div>
+    </section>
+        
+    <section id="product1" class="abc">
+      <h3>Sản phẩm</h3>
+      <div class="pro_container">
+        <div class="pro">
+          <img src="img/img2.webp" alt="">
+          <div class="des">
+            <span>Logitech</span>
+            <h5>Tai nghe Logitech G535 LIGHTSPEED Wireless Black</h5>
+            <h2>2.550.000vnđ</h2>
           </div>
-      
-          <div class="container">
-            <label for="uname"><b>Tên đăng nhập</b></label>
-            <input type="text" placeholder="Nhập tên đăng nhập" name="uname" required>
-      
-            <label for="psw"><b>Mật khẩu</b></label>
-            <input type="password" placeholder="Nhập mật khẩu" name="psw" required>
-              
-            <button type="submit">Đăng nhập</button>
-            <label>
-              <input type="checkbox" checked="checked" name="remember"> Lưu mật khẩu
-            </label>
-            <span class="psw"><a href="#">Quên mật khẩu?</a></span>
-            <br>
-            <br>
-            <p>Nếu bạn mới biết đến HeadPhone Store?
-              <a href="#" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">
-                Đăng ký ngay
-              </a>
-            </p>
-            <br>
-          </div>
-        </form>
-      </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
 
-      <div id="id02" class="modal">
-        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-        <form class="modal-content" action="/action_page.php">
-          <div class="container">
-            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
-            <img src="img/img4.jfif" alt="Avatar" class="avatar">
-            <hr>
-            <label for="email"><b>Email</b></label>
-            <input type="email" placeholder="Nhập email" name="email" required>
-      
-            <label for="uname"><b>Tên đăng nhập</b></label>
-            <input type="text" placeholder="Nhập tên đăng nhập" name="psw-repeat" required>
-      
-            <label for="psw"><b>Mật khẩu</b></label>
-            <input type="password" placeholder="Nhập mật khẩu" name="psw" required>
-            
-            <label>
-              <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Lưu mật khẩu
-            </label>
-    
-            <div class="clearfix">
-              <button type="submit" class="signupbtn">Đăng ký</button>
-            </div>
-            <p>Nếu bạn đã có tài khoản?<a href="#" onclick="document.getElementById('id01').style.display='block'">Đăng nhập tại đây</a></p>
+        <div class="pro">
+          <img src="img/img3.webp" alt="">
+          <div class="des">
+            <span>HyperX</span>
+            <h5>Tai nghe HyperX Cloud Alpha Wireless</h5>
+            <h2>4,490,000vnđ</h2>
           </div>
-        </form>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+
+        <div class="pro">
+          <img src="img/img4.webp" alt="">
+          <div class="des">
+            <span>HyperX</span>
+            <h5>Tai nghe HyperX Cloud Alpha Red</h5>
+            <h2>1,890,000vnđ</h2>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+
+        <div class="pro">
+          <img src="img/img5.webp" alt="">
+          <div class="des">
+            <span>Havit</span>
+            <h5>Tai nghe Havit H2002P</h5>
+            <h2>790,000vnđ</h2>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+
+        <div class="pro">
+          <img src="img/img6.webp" alt="">
+          <div class="des">
+            <span>Havit</span>
+            <h5>Tai nghe Havit H2008D</h5>
+            <h2>790,000vnđ</h2>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div> 
+        
+        <div class="pro">
+          <img src="img/img7.webp" alt="">
+          <div class="des">
+            <span>Razer</span>
+            <h5>Tai nghe Razer BlackShark V2 X White</h5>
+            <h2>1,190,000vnđ</h2>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="img/img8.webp" alt="">
+          <div class="des">
+            <span>Razer</span>
+            <h5>Tai nghe Razer Kraken BT Kitty Edition - Quartz</h5>
+            <h2>2,690,000vnđ</h2>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        
+        <div class="pro">
+          <img src="img/img9.webp" alt="">
+          <div class="des">
+            <span>Asus</span>
+            <h5>Tai nghe Asus ROG Delta S EVA Edition</h5>
+            <h2>5,590,000vnđ</h2>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        
       </div>
-      aaaaaaa
-      aaaaaaa
-      aaaaaaa
-      aaaaaaa
-      aaaaaaa
-      aaaaaaa
-      aaaaaaa
-      aaaaaaa
-      aaaaaaa
-      <a href="a"></a>
-      aaaaaaa
-      aaaaaaa
-      a 
-  a
-      
+    </section>
 
     <script src="java.js"></script>
 </body>
