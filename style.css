@@ -33,7 +33,7 @@ h6{
 }
 
 p{
-    font-size: 16px;
+    font-size: 20px;
     color: #465b52;
     margin: 15px 0 20px 0;
 }
@@ -644,6 +644,23 @@ footer .follow i{
     font-size: 20px;
     line-height: 25px;
 }
+
+/*about page */
+
+#about-head{
+    display: flex;
+    align-items: center;
+}
+
+#about-head img{
+    width: 50%;
+    height: auto;
+}
+
+#about-head div{
+    padding-left: 40px;
+}
+
  /* Start Media Query */
  #close{
     display: none;
@@ -736,6 +753,7 @@ footer .follow i{
     #newsletter .form {
         width: 70%;
     }
+    
 }
 
 @media (max-width: 477px)
@@ -798,4 +816,18 @@ footer .follow i{
     #prodetails .single-pro-details {
         width: 100%;
     }
+
+    /* about page */
+    #about-head{
+        flex-direction: column;
+    }
+    #about-head img{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #about-head div{
+        padding-left: 0px;
+    }
 }
+
+
