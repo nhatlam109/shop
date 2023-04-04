@@ -360,7 +360,7 @@ body{
     padding: 30px;
 }
 #sm-banner .banner-box2{
-    background-image: url("img/banner/b2.webp");
+    background-image: url("img/banner/b3.jpg");
 }
 #sm-banner h4{
     color: #fff;
@@ -409,7 +409,7 @@ button.white{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image: url("img/banner/b1.png");
+    background-image: url("img/banner/b2.webp");
     min-width: 30%;
     height: 30vh;
     background-size: cover;
